@@ -350,12 +350,29 @@ body {
 @media (max-width: 470px) {
 
 
+   .menu-itemss {
+        display: none; /* Hide menu items on mobile */
+        position: absolute;
+        top: 30px;
+        right: 0;
+        background-color: #333;
+        width: 150px;
+        border-radius: 5px;
+        padding: 10px 0;
+    }
 
+    .burger-menu {
+        display: flex; /* Show burger icon */
+    }
+
+    .menu-container.open .menu-itemss {
+        display: block;
+    }
+}
 
 .nav2{
-  justify-content: center;
-  display: flex;
-  padding-bottom: 700px;
+    background-color: rgb(168, 182, 182);
+    height: 100%;
 }
 
   .right{
@@ -393,7 +410,21 @@ body {
 }
 
 
+.gaus2{
+  margin-left: 35px;
+}
 
+.teqsti{
+  margin-left: 40px;
+}
+
+.sakontaqto{
+    margin-left: 20px;
+
+}
+
+.menu-container{
+  margin-right: 20px;
 }
 
 @media  (max-width: 1100px) {
